@@ -7,20 +7,69 @@
     android:orientation="vertical"
     tools:context=".MyProfileActivity">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient_background"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:elevation="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="40dp"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    app:src="@drawable/owl">
+                </ImageView>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Your Hanana dashboard"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"/>
+
+        </LinearLayout>
+
     <!-- Account settings -->
     <Button
         android:id="@+id/account_settings_btn"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="@drawable/circular_background"
+        android:fontFamily="serif-monospace"
+        android:drawableStart="@drawable/ic_settings_black_24dp"
         android:onClick="AccSettingsOnClick"
-        android:text="@string/account_settings_label" />
+        android:text="@string/account_settings_label"
+        android:textStyle="bold"/>
 
     <!-- My Events -->
     <Button
         android:id="@+id/my_events_btn"
         android:text="@string/my_events_label"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="@drawable/circular_background"
+        android:fontFamily="serif-monospace"
+        android:drawableStart="@drawable/ic_bubble_chart_black_24dp"
+        android:textStyle="bold"
         android:onClick="MyEventsOnClick"/>
 
 
@@ -28,14 +77,28 @@
     <Button
         android:id="@+id/my_favourites_btn"
         android:text="@string/my_favourites_label"
-        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_favorite_border_black_24dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="@drawable/circular_background"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
         android:onClick="MyFavouritesOnClick"/>
 
     <Button
         android:id="@+id/logout_btn"
         android:text="@string/logout_label"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:background="@drawable/circular_background"
+        android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
         android:onClick="LogoutOnClick"/>
 </LinearLayout>
