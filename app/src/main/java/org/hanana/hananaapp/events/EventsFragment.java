@@ -52,6 +52,7 @@ public class EventsFragment extends Fragment {
                 Event event = new Event(i, 0);
                 event.setTitle("Event " + i);
                 event.setDate(new Date());
+                events.add(event);
             }/*}
         }*/
 
