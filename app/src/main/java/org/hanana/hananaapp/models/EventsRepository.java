@@ -35,11 +35,14 @@ public class EventsRepository extends HananaDB{
 
             Event event = new Event(cursor.getInt(0),cursor.getInt(1));
             event.setTitle(cursor.getString(2));
-            event.setLongitude(cursor.getFloat(3));
-            event.setLatitude(cursor.getFloat(4));
-            // TODO: convert string to date
+            event.setVenue(cursor.getString(3));
             event.setDate(new Date());
-            event.setVenue(cursor.getString(6));
+            event.setTime(null);
+            event.setLongitude(cursor.getFloat(6));
+            event.setLatitude(cursor.getFloat(7));
+            // TODO: convert string to date
+
+
 
             events.add(event);
 
