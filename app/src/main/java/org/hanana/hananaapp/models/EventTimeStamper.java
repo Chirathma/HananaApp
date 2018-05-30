@@ -1,6 +1,6 @@
 package org.hanana.hananaapp.models;
 
-public abstract class EventTimeStamper implements TimeStamper {
+public class EventTimeStamper implements TimeStamper {
     private int mMinute;
     private int mHour;
     private int mDayOfMonth;
@@ -57,6 +57,11 @@ public abstract class EventTimeStamper implements TimeStamper {
 
     @Override
     public String getDateStamp() {
+        return null;
+    }
+
+    @Override
+    public String getDateTimeStamoFormat() {
         return null;
     }
 
