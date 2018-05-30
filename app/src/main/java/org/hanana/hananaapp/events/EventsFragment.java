@@ -16,6 +16,8 @@ import org.hanana.hananaapp.exceptions.HananaException;
 import org.hanana.hananaapp.models.Event;
 import org.hanana.hananaapp.models.EventsRepository;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -39,13 +41,20 @@ public class EventsFragment extends Fragment {
     }
 
     private void updateUI(){
-       EventsRepository repository = new EventsRepository(getContext());
+       //EventsRepository repository = new EventsRepository(getContext());
         List <Event> events = null;
-        try {
+        /*try {
             events = repository.getAllEvents();
         } catch (HananaException e) {
-            Log.i("HANANA", e.getErrorMessage());
-        }
+            Log.i("HANANA", e.getErrorMessage());*/
+            events = new ArrayList<>();
+            for (int i = 0; i < 100 ; ++i) {
+                Event event = new Event(i, 0);
+                event.setTitle("Event " + i);
+                event.setDate(new Date());
+                events.add(event);
+            }/*}
+        }*/
 
         mAdapter = new EventAdapter(events);
         mEventsRecyclerView.setAdapter(mAdapter);

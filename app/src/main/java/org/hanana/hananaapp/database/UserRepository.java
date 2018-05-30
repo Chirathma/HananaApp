@@ -8,7 +8,7 @@ import android.util.Log;
 import org.hanana.hananaapp.exceptions.HananaException;
 import org.hanana.hananaapp.models.User;
 
-public class UserRepository extends HananaDB{
+public class UserRepository extends HananaDB {
 
 
     public UserRepository(Context context) {

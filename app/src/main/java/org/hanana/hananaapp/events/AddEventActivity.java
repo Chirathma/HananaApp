@@ -36,7 +36,7 @@ public class AddEventActivity extends AppCompatActivity implements ViewUpdater{
     private TextView mLongitude_TextView;
     private TextView mLatitude_TextView;
 
-    private Button mCreateEventButton;
+    private Button mEventAddButton;
 
     private TimeStamper mTimeStamper;
     private ViewUpdater mViewUpdater;
@@ -64,7 +64,7 @@ public class AddEventActivity extends AppCompatActivity implements ViewUpdater{
     }
 
     private void setupListeners(){
-        mCreateEventButton.setOnClickListener(new View.OnClickListener(){
+        mEventAddButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Log.i("HANANA APP", mTimeStamper.getDateTimeStamp());

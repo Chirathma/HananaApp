@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/rules_regultions_checkBox"
         android:layout_width="386dp"
         android:layout_height="519dp"
         android:layout_marginBottom="8dp"
@@ -18,84 +19,84 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/event_title_textView"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="68dp"
             android:text="@string/title"
-            app:layout_constraintEnd_toStartOf="@+id/editText2"
-            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintEnd_toStartOf="@+id/event_title_edit_text"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/event_date_textView"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="48dp"
             android:text="@string/date"
-            app:layout_constraintEnd_toStartOf="@+id/selectDate"
-            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintEnd_toStartOf="@+id/select_date_button"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/event_venue_textView" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/event_venue_textView"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="40dp"
             android:text="@string/venue"
-            app:layout_constraintEnd_toStartOf="@+id/editText3"
-            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintEnd_toStartOf="@+id/event_venue_edit_text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+            app:layout_constraintTop_toBottomOf="@+id/event_title_textView" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/event_time_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="36dp"
             android:text="@string/time"
-            app:layout_constraintEnd_toStartOf="@+id/selectTime"
-            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintEnd_toStartOf="@+id/select_time_button"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/event_date_textView" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/logitute_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="40dp"
             android:text="@string/longitude"
-            app:layout_constraintEnd_toStartOf="@+id/editText9"
+            app:layout_constraintEnd_toStartOf="@+id/longitude_edit_text"
+            app:layout_constraintHorizontal_bias="0.38"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/event_time_textView" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/latitude_textView"
             android:layout_width="wrap_content"
-            android:layout_height="15dp"
+            android:layout_height="22dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="40dp"
             android:text="@string/latitude"
-            app:layout_constraintEnd_toStartOf="@+id/editText10"
-            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintEnd_toStartOf="@+id/latitude_edit_text"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/logitute_textView" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/event_title_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="44dp"
@@ -106,7 +107,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/event_venue_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="44dp"
@@ -114,10 +115,10 @@
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/event_title_edit_text" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/longitude_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="44dp"
@@ -125,10 +126,10 @@
             android:ems="10"
             android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectTime" />
+            app:layout_constraintTop_toBottomOf="@+id/select_time_button" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/latitude_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -138,44 +139,43 @@
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText9"
+            app:layout_constraintTop_toBottomOf="@+id/longitude_edit_text"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/selectDate"
+            android:id="@+id/select_date_button"
             android:layout_width="217dp"
             android:layout_height="38dp"
             android:layout_marginEnd="40dp"
             android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText3"
             android:onClick="showDatePickerDialog"
-            android:text="Select the Date"/>
+            android:text="Select the Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_venue_edit_text" />
 
         <Button
-            android:id="@+id/selectTime"
+            android:id="@+id/select_time_button"
             android:layout_width="214dp"
             android:layout_height="39dp"
-            android:layout_marginEnd="52dp"
+            android:layout_marginEnd="44dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectDate"
             android:onClick="showTimePickerDialog"
-            android:text="Select the Time"/>
+            android:text="Select the Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_date_button" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
+        <Button
+            android:id="@+id/add_event_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="@string/rules"
+            android:text="Add Event"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText10"
-            app:layout_constraintVertical_bias="0.216" />
+            app:layout_constraintTop_toBottomOf="@+id/latitude_edit_text" />
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
