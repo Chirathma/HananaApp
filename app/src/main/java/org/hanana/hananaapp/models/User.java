@@ -27,7 +27,7 @@ public class User {
         return mUsername;
     }
 
-    private void setUsername(String username) throws HananaException {
+    public void setUsername(String username) throws HananaException {
         if(isNullOrEmpty(username) || username.length() <8 )
             throw new HananaException("Minimum username length is 8.");
         mUsername = username;

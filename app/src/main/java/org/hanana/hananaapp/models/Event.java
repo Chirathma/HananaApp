@@ -10,10 +10,15 @@ public class Event {
     private float mLatitude;
     private Date mDate;
     private String mVenue;
+    private String time;
 
     public Event(long id, long userId) {
         mId = id;
         mUserId = userId;
+    }
+
+    public Event() {
+
     }
 
     public String getTitle() {
@@ -54,5 +59,13 @@ public class Event {
 
     public void setVenue(String venue) {
         mVenue = venue;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
